@@ -1,4 +1,6 @@
 #cording: utf-8
+#this is a copy from http://aidiary.hatenablog.com/entry/20150618/1434628272
+
 
 import os
 import time
