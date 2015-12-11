@@ -72,10 +72,16 @@ class MLP(object):
 
 		#多層パーセプトロンのパラメータ
 		self.params = self.hiddenLayer.params + self.logRegressionLayer.params  #python的な書き方の.paramsが後に入る意味がわからない
+		#--------------------ここまではやっと理解------------------
+
+
+		#--------------------ここからよく分からないところ-----------
 
 
 def test_mlp(learning_rate=0.01, L1_reg=0.00, L2.reg=0.0001, n_epochs=1000, dataset='mnist.pkl.gz', batch_size=20, n_hidden=500): #なぜclassじゃない？　epochsとは？
 	datasets = load_data(dataset)
+
+	#---これtrainとvalidとtestの三つがあるのはどういった意味でしょうか
 
 	train_set_x, train_set_y = datasets[0]
 	valid_set_x, valid_set_y = datasets[1]
